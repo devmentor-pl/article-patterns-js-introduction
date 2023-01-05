@@ -13,7 +13,10 @@ class Airport {
 }
 
 class PolishAirport extends Airport {
-    country = 'Poland';
+    constructor(name, runways, activeRunway, communication) {
+        super(name, runways, activeRunway, communication);
+        this.country = 'Poland';
+    }
 }
 
 const warsawAirport = new Airport('EPWA', [11, 15, 29, 33], null, {
